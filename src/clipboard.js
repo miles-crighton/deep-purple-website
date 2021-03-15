@@ -19,6 +19,6 @@ function setupClipboardEvents() {
     const colorButtons = document.getElementsByClassName("color-button");
 
     for (let node of colorButtons) {
-        node.addEventListener("click", handleClick);
+        node.addEventListener("click", copyColorToClipboard);
     }
 }

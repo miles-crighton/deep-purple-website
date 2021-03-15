@@ -68,7 +68,7 @@ async function copyFiles(srcDir, destDir, files) {
     );
 }
 
-copyFiles("src", "dist", ["*.css", "*.json", "*.js"])
+copyFiles("src", "dist", ["*.css", "*.json", "*.js", "*.svg"])
     .then(() => {
         console.log("done");
     })

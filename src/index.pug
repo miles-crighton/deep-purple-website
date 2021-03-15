@@ -2,12 +2,15 @@ doctype html
 html(lang="en")
   head
     title Deep Purple - A color theme
+    base(href="/" target="_blank")
     script(src="clipboard.js" type='text/javascript')
     script(type='text/javascript').
       if (foo) bar(1 + 5)
+    link(rel="stylesheet" href="styles.css")
   body
     h1 Pug - node template engine
     #container.col
+      img(src="title.svg")
       if youAreUsingPug
         p You are amazing
       else
@@ -16,4 +19,6 @@ html(lang="en")
         Pug is a terse and simple templating language with a
         strong focus on performance and powerful features.
       each item in colors
-        button.color-button(data-color=item.color)= item.name
+        button.color-button(data-color=item.color)
+          = item.name
+          = item.color

@@ -1,0 +1,10 @@
+:root {
+    --layer-1: #302231;
+    --layer-2: #271828;
+    --foreground: #ffe3e3;
+}
+
+html {
+    background-color: var(--layer-1);
+    color: var(--foreground);
+}
