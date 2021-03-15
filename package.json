@@ -1,0 +1,22 @@
+{
+    "name": "website",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "dev": "concurrently \"nodemon build.js\" \"serve dist\"",
+        "compile": "node build.js"
+    },
+    "dependencies": {
+        "pug": "^3.0.2"
+    },
+    "devDependencies": {
+        "concurrently": "^6.0.0",
+        "copy": "^0.3.2",
+        "del": "^6.0.0",
+        "glob": "^7.1.6",
+        "gulp": "^4.0.2",
+        "nodemon": "^2.0.7",
+        "prettier": "^2.2.1"
+    }
+}
