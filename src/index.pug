@@ -2,6 +2,9 @@ doctype html
 html(lang="en")
   head
     title Deep Purple - A color theme
+    meta(name="description" content="Keeping your editors & terminals deep in the purple since '21")
+    meta(name="author" content="Miles Crighton")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
     script(src="clipboard.js" type='text/javascript')
     link(rel="stylesheet" href="styles.css")
     link(rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png")
@@ -36,6 +39,9 @@ html(lang="en")
         img.squiggle(src="squiggleDivider.svg" alt="Squiggle Divider")
         section.full-width.centered
           h3 Colors
+          div.copy-label 
+            img(src="clipboard.svg" alt="Clipboard")
+            span Click one to copy it to your clipboard
           img(src="circleDivider.svg" alt="Circle Divider")
           div.colors-warning 
             img(src="warning.svg" alt="Warning")

@@ -45,6 +45,19 @@ p {
     overflow: hidden;
 }
 
+.copy-label {
+    color: var(--primary-600);
+    font-size: var(--text-md);
+    font-weight: normal;
+    margin-bottom: 0.6rem;
+    display: flex;
+    align-items: center;
+}
+
+.copy-label img {
+    margin-right: 0.6rem;
+}
+
 .content-layer::before,
 .content-layer::after {
     content: "";
