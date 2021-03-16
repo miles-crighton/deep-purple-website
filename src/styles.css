@@ -5,6 +5,7 @@
     --layer-1: #302231;
     --layer-2: #271828;
     --primary-300: #b682b9;
+    --primary-400: #9c6f9f;
     --primary-600: #674769;
     --blue: #8179cd;
     --blue-bright: #968df0;
@@ -27,6 +28,12 @@ html {
     font-size: 16px;
     font-family: var(--sans-serif);
     padding: 1rem;
+}
+
+p {
+    color: var(--primary-400);
+    max-width: 450px;
+    text-align: center;
 }
 
 .content-layer {
@@ -71,7 +78,7 @@ section.centered {
 }
 
 .ports-link:hover .ports-link__img {
-    filter: brightness(1.25);
+    filter: brightness(1.2);
 }
 
 .ports-link:hover .ports-link__name {
