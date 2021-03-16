@@ -8,19 +8,12 @@ html(lang="en")
       if (foo) bar(1 + 5)
     link(rel="stylesheet" href="styles.css")
   body
-    h1 Pug - node template engine
-    #container.col
+    #container.content
       img(src="title.svg")
-      if youAreUsingPug
-        p You are amazing
-      else
-        p Get on it!
-      p.
-        Pug is a terse and simple templating language with a
-        strong focus on performance and powerful features.
-      each item in colors
-        button.color-button(data-color=item.color style=`--color: ${item.color}`)
-          div.color-button__swatch    
-          div.color-button__labels
-            div.color-button__name= item.name
-            div.color-button__color= item.color
+      div.color-group
+        each item in colors
+          button.color-button(data-color=item.color style=`--color: ${item.color}`)
+            div.color-button__swatch    
+            div.color-button__labels
+              div.color-button__name= item.name
+              div.color-button__color= item.color
