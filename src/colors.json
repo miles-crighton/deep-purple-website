@@ -1,19 +1,24 @@
 {
-    "colors": [
-        {
-            "name": "Pink",
-            "color": "#FFADE8",
-            "category": "normal"
-        },
-        {
-            "name": "bPink",
-            "color": "#FF94E1",
-            "category": "bright"
-        },
-        {
-            "name": "Lavender",
-            "color": "#B080E3",
-            "category": "normal"
-        }
-    ]
+    "colors": {
+        "Normal": [
+            {
+                "name": "Pink",
+                "color": "#FFADE8",
+                "category": "normal"
+            },
+
+            {
+                "name": "Lavender",
+                "color": "#B080E3",
+                "category": "normal"
+            }
+        ],
+        "Bright": [
+            {
+                "name": "bPink",
+                "color": "#FF94E1",
+                "category": "bright"
+            }
+        ]
+    }
 }

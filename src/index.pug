@@ -29,10 +29,14 @@ html(lang="en")
           img(src="circleDivider.svg")
           p You’re welcome to develop a port of Deep Purple. All is asked is that you credit me and the original GitHub repo. Feel free to use the colors below by clicking any to copy it to your clipboard.
         img.squiggle(src="squiggleDivider.svg")
-        div.color-group
-          each item in colors
-            button.color-button(data-color=item.color style=`--color: ${item.color}`)
-              div.color-button__swatch    
-              div.color-button__labels
-                div.color-button__name= item.name
-                div.color-button__color= item.color
+        div.color-groups
+          each colorGroup in Object.entries(colors)
+            div.color-group
+              h3.color-group__header= colorGroup[0]
+              div.color-group__colors
+                each item in colorGroup[1]
+                  button.color-button(data-color=item.color style=`--color: ${item.color}`)
+                    div.color-button__swatch    
+                    div.color-button__labels
+                      div.color-button__name= item.name
+                      div.color-button__color= item.color
