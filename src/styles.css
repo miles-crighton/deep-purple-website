@@ -7,4 +7,48 @@
 html {
     background-color: var(--layer-1);
     color: var(--foreground);
+    font-size: 16px;
+}
+
+.color-button {
+    background-color: transparent;
+    position: relative;
+    border: none;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    cursor: pointer;
+}
+
+.color-button__name {
+    color: var(--color);
+    font-weight: bold;
+}
+
+.color-button__color {
+    color: var(--color);
+    opacity: 0.7;
+}
+
+.color-button__swatch {
+    position: relative;
+    border-radius: 50%;
+    background-color: var(--color);
+    width: 25px;
+    height: 25px;
+    margin-right: 0.7rem;
+}
+
+.color-button__swatch::after {
+    --size: 10px;
+    content: "";
+    width: calc(100% + var(--size));
+    height: calc(100% + var(--size));
+    border-radius: 50%;
+    left: calc(var(--size) / 2 * -1);
+    top: calc(var(--size) / 2 * -1);
+    box-sizing: border-box;
+    position: absolute;
+    opacity: 0.5;
+    border: 2px solid var(--color);
 }
