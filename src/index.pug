@@ -2,18 +2,32 @@ doctype html
 html(lang="en")
   head
     title Deep Purple - A color theme
-    base(href="/" target="_blank")
     script(src="clipboard.js" type='text/javascript')
     script(type='text/javascript').
       if (foo) bar(1 + 5)
     link(rel="stylesheet" href="styles.css")
   body
-    #container.content
-      img(src="title.svg")
-      div.color-group
-        each item in colors
-          button.color-button(data-color=item.color style=`--color: ${item.color}`)
-            div.color-button__swatch    
-            div.color-button__labels
-              div.color-button__name= item.name
-              div.color-button__color= item.color
+    div.content-layer
+      div.content
+        img.title-svg(src="title.svg")
+        img.squiggle(src="squiggleDivider.svg")
+        section.centered
+          h3 Implementations
+          img(src="circleDivider.svg")
+          div.ports-container
+            a.ports-link
+              img.ports-link__img(src="vscode.png")
+              div.ports-link__name VsCode 
+              div.ports-link__version α0.1
+            a.ports-link
+              img.ports-link__img(src="iterm.png")
+              div.ports-link__name iTerm2
+              div.ports-link__version α0.1
+        img.squiggle(src="squiggleDivider.svg")
+        div.color-group
+          each item in colors
+            button.color-button(data-color=item.color style=`--color: ${item.color}`)
+              div.color-button__swatch    
+              div.color-button__labels
+                div.color-button__name= item.name
+                div.color-button__color= item.color

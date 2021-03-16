@@ -25,13 +25,6 @@ const globPromise = (fileGlob, cb) => {
 
 del.sync(["dist/*"]);
 
-// // // Compile template.pug, and render a set of data
-// console.log(
-//     pug.renderFile("src/index.pug", {
-//         name: "Timothy",
-//     })
-// );
-
 let pugFile = pug.renderFile("src/index.pug", {
     colors: colors.colors,
 });
@@ -68,7 +61,7 @@ async function copyFiles(srcDir, destDir, files) {
     );
 }
 
-copyFiles("src", "dist", ["*.css", "*.json", "*.js", "*.svg"])
+copyFiles("src", "dist", ["*.css", "*.json", "*.js", "*.svg", "*.png"])
     .then(() => {
         console.log("done");
     })
