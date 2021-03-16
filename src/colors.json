@@ -47,6 +47,23 @@
             "primary-400": "#9C6F9F",
             "primary-500": "#7F5882",
             "primary-600": "#674769"
-        }
+        },
+        "Layers": [
+            {
+                "name": "Layer 0",
+                "foreground": "#FFE3E3",
+                "background": "#39293B"
+            },
+            {
+                "name": "Layer 1",
+                "foreground": "#FFC3C3",
+                "background": "#332535"
+            },
+            {
+                "name": "Layer 2",
+                "foreground": "#FFB0B0",
+                "background": "#281D29"
+            }
+        ]
     }
 }

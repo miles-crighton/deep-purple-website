@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 
 :root {
+    --layer-0: #39293b;
     --layer-1: #302231;
     --layer-2: #271828;
     --primary-300: #b682b9;
@@ -143,7 +144,40 @@ section.full-width {
     box-sizing: border-box;
 }
 
+.color-group__layers {
+    display: flex;
+    flex-direction: column;
+}
+
+.layer-button {
+    flex: 1;
+    background-color: var(--bg);
+    border-radius: 99px;
+    padding: 1rem 0.5rem;
+    color: var(--foreground);
+    font-family: var(--monospace);
+    font-size: var(--text-base);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+.layer-button__name {
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.layer-button__color {
+    font-weight: normal;
+    font-size: var(--text-md);
+    opacity: 0.7;
+}
+
 .color-button {
+    padding: 0 0.5rem;
     flex: 1;
     flex-basis: 150px;
     background-color: transparent;
@@ -155,6 +189,12 @@ section.full-width {
     cursor: pointer;
     font-family: var(--monospace);
     font-size: var(--text-base);
+    border-radius: 99px;
+    transition: 200ms ease background-color;
+}
+
+.color-button:hover {
+    background-color: var(--layer-0);
 }
 
 .color-button__name {
@@ -226,7 +266,7 @@ section.full-width {
     border-radius: 60px;
     width: 100%;
     box-sizing: border-box;
-    padding: 0.3rem 0;
+    padding: 0.4rem 0;
     margin: 0;
     margin-bottom: 0.8rem;
     font-family: var(--monospace);

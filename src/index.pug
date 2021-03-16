@@ -39,10 +39,19 @@ html(lang="en")
           each colorGroup in Object.entries(colors)
             div.color-group
               h3.color-group__header= colorGroup[0]
-              div.color-group__colors
-                each item in Object.entries(colorGroup[1])
-                  button.color-button(data-color=item[1] style=`--color: ${item[1]}`)
-                    div.color-button__swatch    
-                    div.color-button__labels
-                      div.color-button__name= item[0]
-                      div.color-button__color= item[1]
+              if colorGroup[0] !== "Layers"
+                div.color-group__colors
+                  each item in Object.entries(colorGroup[1])
+                    button.color-button(data-color=item[1] style=`--color: ${item[1]}`)
+                      div.color-button__swatch    
+                      div.color-button__labels
+                        div.color-button__name= item[0]
+                        div.color-button__color= item[1]
+              else
+                div 
+                    div.color-group__layers
+                      each item in colorGroup[1]
+                        button.layer-button(data-color=item.background style=`--bg: ${item.background}; --foreground: ${item.foreground}`)
+                            div.layer-button__name= item.name
+                            div.layer-button__color= item.background
+

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", setupClipboardEvents);
 
 function copyColorToClipboard(e) {
-    const color = e.target.getAttribute("data-color");
+    const color = e.currentTarget.getAttribute("data-color");
 
     navigator.clipboard.writeText(color).then(
         () => {
@@ -17,8 +17,11 @@ function copyColorToClipboard(e) {
 
 function setupClipboardEvents() {
     const colorButtons = document.getElementsByClassName("color-button");
+    const layerButtons = document.getElementsByClassName("layer-button");
 
-    for (let node of colorButtons) {
-        node.addEventListener("click", copyColorToClipboard);
+    const buttons = [...colorButtons, ...layerButtons];
+
+    for (let node of buttons) {
+        node.addEventListener("click", copyColorToClipboard, false);
     }
 }
