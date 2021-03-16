@@ -38,6 +38,14 @@ p {
     text-align: center;
 }
 
+button {
+    outline: none;
+}
+
+button:focus-visible {
+    box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px rgb(121, 163, 255);
+}
+
 .content-layer {
     position: relative;
     border-radius: 6px;
@@ -266,6 +274,47 @@ section.full-width {
     position: absolute;
     opacity: 0.5;
     border: 2px solid var(--color);
+}
+
+.color-button__alert {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10px;
+    background-color: #593e5b;
+    border-radius: 99px;
+    color: var(--foreground);
+    width: auto;
+    white-space: nowrap;
+    font-weight: normal;
+    font-size: var(--text-sm);
+    padding: 0.3rem 1rem;
+    display: hidden;
+    pointer-events: none;
+    animation: rise-and-fade 2s ease forwards;
+}
+
+@keyframes rise-and-fade {
+    0% {
+        opacity: 0;
+        display: visible;
+        transform: translateY(0px) translateX(-50%);
+    }
+    15% {
+        opacity: 1;
+        display: visible;
+        transform: translateY(-10px) translateX(-50%);
+    }
+    80% {
+        opacity: 1;
+        display: visible;
+        transform: translateY(-10px) translateX(-50%);
+    }
+    100% {
+        opacity: 0;
+        display: hidden;
+        transform: translateY(-10px) translateX(-50%);
+    }
 }
 
 .color-groups {
