@@ -1,24 +1,52 @@
 {
     "colors": {
-        "Normal": [
-            {
-                "name": "Pink",
-                "color": "#FFADE8",
-                "category": "normal"
-            },
-
-            {
-                "name": "Lavender",
-                "color": "#B080E3",
-                "category": "normal"
-            }
-        ],
-        "Bright": [
-            {
-                "name": "bPink",
-                "color": "#FF94E1",
-                "category": "bright"
-            }
-        ]
+        "Normal": {
+            "Pink": "#FFADE8",
+            "Lavender": "#B080E3",
+            "Lavender2": "#D894E6",
+            "Blue": "#8078D1",
+            "Cyan": "#9AE0F0",
+            "Orange": "#F08181",
+            "Purple": "#B356A3",
+            "Magenta": "#EB579C",
+            "Yellow": "#EBB984",
+            "Green": "#A4BC77",
+            "Red": "#E05470",
+            "White": "#FFE3E3"
+        },
+        "Bright": {
+            "bPink": "#FF94E1",
+            "bLavender": "#AB6CEE",
+            "bLavender2": "#D884E9",
+            "bBlue": "#9994FF",
+            "bCyan": "#87DDEE",
+            "bOrange": "#FA6969",
+            "bPurple": "#C851B4",
+            "bMagenta": "#E54386",
+            "bYellow": "#F9B975",
+            "bGreen": "#A7C966",
+            "bRed": "#EF4568",
+            "bWhite": "#FFF0F0"
+        },
+        "Main": {
+            "Foreground": "#FFE3E3",
+            "Selection": "#7A446F",
+            "Comment": "#856085",
+            "Foreground2": "#D0AAD0",
+            "Cursor": "#BD62AE"
+        },
+        "High Contrast": {
+            "Links": "#62B8E2",
+            "Error": "#FF4A8A",
+            "Warning": "#F9CD5F"
+        },
+        "Primary": {
+            "primary-100": "#E4A5E8",
+            "primary-200": "#CE94D2",
+            "primary-300": "#B682B9",
+            "primary-400": "#9C6F9F",
+            "primary-500": "#7F5882",
+            "primary-600": "#674769"
+        }
     }
 }
