@@ -39,8 +39,31 @@ p {
 }
 
 .content-layer {
+    position: relative;
     border-radius: 6px;
     background-color: var(--layer-1);
+    overflow: hidden;
+}
+
+.content-layer::before,
+.content-layer::after {
+    content: "";
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: var(--layer-2);
+    box-sizing: border-box;
+}
+
+.content-layer::before {
+    left: -30px;
+    top: -30px;
+}
+
+.content-layer::after {
+    right: -25px;
+    bottom: -30px;
 }
 
 .colors-warning {
@@ -177,7 +200,8 @@ section.full-width {
 }
 
 .color-button {
-    padding: 0 0.5rem;
+    margin: 0rem 0.3rem;
+    padding: 0.2rem 0.5rem;
     flex: 1;
     flex-basis: 150px;
     background-color: transparent;
@@ -275,4 +299,30 @@ section.full-width {
 
 footer {
     color: var(--primary-400);
+    margin-bottom: 2rem;
+}
+
+.designed-by {
+    color: var(--primary-600);
+    font-weight: bold;
+    font-size: var(--text-sm);
+}
+
+.author {
+    display: flex;
+}
+
+.author__name {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.github-link {
+    cursor: pointer;
+    border-radius: 99px;
+    fill: var(--primary-300);
+}
+
+.github-link:hover img {
+    filter: brightness(1.3);
 }
