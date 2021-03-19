@@ -1,51 +1,53 @@
 doctype html
 html(lang="en")
   head
-    title Deep Purple - A color theme
-    meta(name="description" content="Keeping your editors & terminals deep in the purple since '21")
+    title Velvet Mango - A color theme
+    meta(name="description" content="Embrace the caress of deep velvety purples; let your editor become enveloped in warm scrumptious oranges. It's not a desert, it does however give you some eye candy as you tip-tap-clap your groovy code.")
     meta(name="author" content="Miles Crighton")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     script(src="clipboard.js" type='text/javascript')
     link(rel="stylesheet" href="styles.css")
-    link(rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png")
-    link(rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png")
-    link(rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png")
-    link(rel="manifest" href="/site.webmanifest")
-    link(rel="mask-icon" href="/safari-pinned-tab.svg" color="#b058a0")
+    link(rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png")
+    link(rel="manifest" href="site.webmanifest")
+    link(rel="mask-icon" href="safari-pinned-tab.svg" color="#ffa986")
     meta(name="msapplication-TileColor" content="#603cba")
     meta(name="theme-color" content="#302231")
   body
     div.content-layer
       div.content
-        img.title-svg(src="title.svg" alt="Deep Purple - A color Theme")
+        img.mango-svg(src="mango.svg" alt="Mango Logo")
+        img.title-svg(src="title.svg" alt="Velvet Mango - A color Theme")
         img.squiggle(src="squiggleDivider.svg" alt="Squiggle Divider")
         section.centered
           h3 Implementations
           img(src="circleDivider.svg" alt="Circle Divider")
           div.ports-container
-            a.ports-link(href="https://github.com/miles-crighton/deep-purple-vscode")
+            a.ports-link(href="https://github.com/miles-crighton/velvet-mango-vscode")
               img.ports-link__img(src="vscode.png" alt="VsCode Logo")
-              div.ports-link__name VsCode 
+              div.ports-link__name VSCode 
               div.ports-link__version α0.1
-            a.ports-link(href="https://github.com/miles-crighton/deep-purple-iterm")
+            a.ports-link(href="https://github.com/miles-crighton/velvet-mango-iterm")
               img.ports-link__img(src="iterm.png" alt="iTerm Logo")
               div.ports-link__name iTerm2
               div.ports-link__version α0.1
+          p Embrace the caress of deep velvety purples; let your editor become enveloped in warm scrumptious oranges. It's not a desert, it does however give you some eye candy as you tip-tap-clap your groovy code.
         img.squiggle(src="squiggleDivider.svg" alt="Squiggle Divider")
         section.centered 
-          h3 Fancy porting Deep Purple?
+          h3 Fancy porting Velvet Mango?
           img(src="circleDivider.svg" alt="Circle Divider")
-          p You’re welcome to develop a port of Deep Purple. All is asked is that you credit me and the original GitHub repo. Feel free to use the colors below by clicking any to copy it to your clipboard.
+          p You’re welcome to develop a port of Velvet Mango. All is asked is that you credit me and the original GitHub repo. Feel free to use the colors below by clicking any to copy it to your clipboard.
         img.squiggle(src="squiggleDivider.svg" alt="Squiggle Divider")
         section.full-width.centered
+          //- div.colors-warning 
+          //-   img(src="warning.svg" alt="Warning")
+          //-   span Colors are not yet finalized and are subject to change
           h3 Colors
           div.copy-label 
             img(src="clipboard.svg" alt="Clipboard")
             span Click one to copy it to your clipboard
           img(src="circleDivider.svg" alt="Circle Divider")
-          div.colors-warning 
-            img(src="warning.svg" alt="Warning")
-            span Colors are not yet finalized and are subject to change
         div.color-groups
           each colorGroup in Object.entries(colors)
             div.color-group
@@ -65,7 +67,6 @@ html(lang="en")
                         button.layer-button(data-color=item.background style=`--bg: ${item.background}; --foreground: ${item.foreground}`)
                             div.layer-button__name= item.name
                             div.layer-button__color= item.background
-        img.squiggle(src="squiggleDivider.svg" alt="Squiggle Divider")
         footer
           div.designed-by DESIGNED BY
           div.author

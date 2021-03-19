@@ -2,11 +2,11 @@
 <svg width="18px" height="21px" viewBox="0 0 18 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Group-7">
-            <rect id="Rectangle" stroke="#604262" stroke-width="1.5" x="0.75" y="2.25" width="15.75" height="17.25" rx="3.75"></rect>
-            <rect id="Rectangle" fill="#604262" x="3.75" y="0" width="9.75" height="4.5" rx="2.25"></rect>
-            <rect id="Rectangle" fill="#604262" x="3.75" y="6.75" width="9.75" height="1.5" rx="0.75"></rect>
-            <rect id="Rectangle" fill="#604262" x="3.75" y="10.5" width="9.75" height="1.5" rx="0.75"></rect>
-            <rect id="Rectangle" fill="#604262" x="3.75" y="14.25" width="9.75" height="1.5" rx="0.75"></rect>
+            <rect id="Rectangle" stroke="#694756" stroke-width="1.5" x="0.75" y="2.25" width="15.75" height="17.25" rx="3.75"></rect>
+            <rect id="Rectangle" fill="#694756" x="3.75" y="0" width="9.75" height="4.5" rx="2.25"></rect>
+            <rect id="Rectangle" fill="#694756" x="3.75" y="6.75" width="9.75" height="1.5" rx="0.75"></rect>
+            <rect id="Rectangle" fill="#694756" x="3.75" y="10.5" width="9.75" height="1.5" rx="0.75"></rect>
+            <rect id="Rectangle" fill="#694756" x="3.75" y="14.25" width="9.75" height="1.5" rx="0.75"></rect>
         </g>
     </g>
 </svg>

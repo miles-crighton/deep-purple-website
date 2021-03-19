@@ -1,6 +1,6 @@
 {
-    "name": "Deep Purple",
-    "short_name": "Deep Purple",
+    "name": "",
+    "short_name": "",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#302231",
-    "background_color": "#302231",
+    "theme_color": "#271828",
+    "background_color": "#271828",
     "display": "standalone"
 }

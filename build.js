@@ -67,6 +67,7 @@ copyFiles("src", "dist", [
     "*.js",
     "*.svg",
     "*.png",
+    "CNAME",
     "/favicons/*",
 ])
     .then(() => {
